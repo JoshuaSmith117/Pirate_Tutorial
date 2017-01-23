@@ -35,7 +35,10 @@ namespace Assets.EntityTemplates
             playerEntityTemplate.Add(new PlayerLifecycle.Data(new PlayerLifecycleData(0, 3, 10)));
 
             playerEntityTemplate.Add(new ShipControls.Data(new ShipControlsData(0, 0)));
-	    playerEntityTemplate.Add(new Health.Data(new HealthData(1000)));
+
+            playerEntityTemplate.Add(new Health.Data(new HealthData(1000)));
+
+            playerEntityTemplate.Add(new Score.Data(new ScoreData(0)));
 
 
             // Grant component access permissions
@@ -48,9 +51,12 @@ namespace Assets.EntityTemplates
 
                 .SetWriteAccess<ShipControls>(CommonPredicates.SpecificClientOnly(clientWorkerId))
 
-                .SetWriteAccess<PlayerLifecycle>(CommonPredicates.PhysicsOnly);
+                .SetWriteAccess<PlayerLifecycle>(CommonPredicates.PhysicsOnly)
 
-		.SetWriteAccess<Health>(CommonPredicates.PhysicsOnly);
+                .SetWriteAccess<Health>(CommonPredicates.PhysicsOnly)
+
+                .SetWriteAccess<Score>(CommonPredicates.PhysicsOnly);
+
             playerEntityTemplate.SetAcl(acl);
 
 

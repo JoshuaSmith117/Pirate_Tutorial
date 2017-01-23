@@ -4,6 +4,8 @@ using Improbable.Unity;
 
 using Improbable.Unity.Visualizer;
 
+using Improbable.Ship;
+
 
 
 namespace Assets.Gamelogic.Pirates.Behaviours
@@ -19,19 +21,15 @@ namespace Assets.Gamelogic.Pirates.Behaviours
 
     [Require]
         private Health.Writer HealthWriter;
+
         void OnEnable()
-
         {
-
-		InvokeRepeating("DecrementCurrentHealth", 0, 1.0f);
+            InvokeRepeating("DecrementCurrentHealth", 0, 1.0f);
         }
 
-
         void OnDisable()
-
         {
-
-		CancelInvoke("DecrementCurrentHealth");
+            CancelInvoke("DecrementCurrentHealth");
         }
 
         void DecrementCurrentHealth()

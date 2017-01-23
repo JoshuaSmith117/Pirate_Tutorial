@@ -18,9 +18,10 @@ public class SnapshotMenu : MonoBehaviour
     {
         var snapshotEntities = new Dictionary<EntityId, SnapshotEntity>();
         var currentEntityId = 0;
-        
+
         snapshotEntities.Add(new EntityId(currentEntityId++), TerrainEntityTemplate.GenerateTerrainSnapshotEntityTemplate());
         snapshotEntities.Add(new EntityId(currentEntityId++), PlayerSpawnerEntityTemplate.GeneratePlayerSpawnerSnapshotEntityTemplate());
+        PirateEntityTemplate.PopulateSnapshotWithPirateEntities(ref snapshotEntities, ref currentEntityId);
 
         SaveSnapshot(snapshotEntities);
     }

@@ -38,7 +38,9 @@ GameObject:
   - 114: {fileID: 11437332}
   - 114: {fileID: 114000011675452572}
   - 114: {fileID: 114000013195787224}
-  - 114: {fileID: 114000013824945544}
+  - 114: {fileID: 114000013203621336}
+  - 114: {fileID: 114000011772241302}
+  - 114: {fileID: 114000011399129866}
   m_Layer: 0
   m_Name: PlayerShip
   m_TagString: Untagged
@@ -623,6 +625,17 @@ Animation:
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &114000011399129866
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 107220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88985382aaed9d249beab4630a542940, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114000011511276432
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -645,6 +658,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 051f197ef5f2da645a97fd94bf1a5a66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114000011772241302
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 107220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8e340353b956824b89828823486ab2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114000013195787224
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -656,15 +680,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1f5e341af930d6438da8a9fd8d5604f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114000013824945544
+--- !u!114 &114000013203621336
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 107220}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab317b2a3a7a4534283417773793ca8f, type: 3}
+  m_Script: {fileID: 11500000, guid: ffef69351dffb7a49827fdc1da2a5c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114000014020662416
